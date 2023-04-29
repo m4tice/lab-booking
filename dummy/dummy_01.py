@@ -1,18 +1,8 @@
-from fastapi import FastAPI, Body
+"""dummy_01"""
 
 
-PCS = ["PC_01", "PC_02", "PC_03", "PC_04", "PC_05", "PC_06"]
-DEVICES = ["Device_01", "Device_02", "Device_03"]
-
-lb_app = FastAPI()
-
-
-@lb_app.get("/pcs")
-async def get_pcs():
-    return PCS
-
-
-@lb_app.get("/devices")
-async def get_devices():
-    return DEVICES
-
+def lab_booking_intro():
+    """
+    Say hello to users
+    """
+    print("Hello Users")
