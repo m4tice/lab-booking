@@ -1,6 +1,6 @@
 """Main Application"""
 
-from fastapi import FastAPI
+from fastapi import FastAPI  # py-lint: disable=import-error
 
 
 PCS = ["PC_01", "PC_02", "PC_03", "PC_04", "PC_05", "PC_06"]
