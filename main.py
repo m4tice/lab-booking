@@ -1,4 +1,6 @@
-from fastapi import FastAPI, Body
+"""Main Application"""
+
+from fastapi import FastAPI
 
 
 PCS = ["PC_01", "PC_02", "PC_03", "PC_04", "PC_05", "PC_06"]
@@ -23,4 +25,3 @@ async def get_devices():
     :return: DEVICES
     """
     return DEVICES
-

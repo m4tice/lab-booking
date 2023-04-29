@@ -5,7 +5,10 @@ import dummy.dummy_01 as dummy
 
 
 class MyTestCase(unittest.TestCase):
-    def test_something(self):
+    """
+    TestCase class
+    """
+    def test_lab_booking_intro(self):
         introduction = "Hello Users"
         self.assertEqual(introduction, dummy.lab_booking_intro())  # add assertion here
 
