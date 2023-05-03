@@ -5,6 +5,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from app.routers import unsplash
+
 from .library.helpers import openfile
 
 
@@ -15,7 +17,10 @@ from .library.helpers import openfile
 # app creation
 app = FastAPI()
 
-# templates
+# router
+app.include_router(unsplash.router)
+
+# directories
 TEMPLATE_DIRECTORY = "./templates"
 STATIC_DIRECTORY = "./static"
 
