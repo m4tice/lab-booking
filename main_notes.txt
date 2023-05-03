@@ -1,4 +1,4 @@
-Start / Run webpage:
+Web application startup:
 
     uvicorn app.main:app --reload
 
