@@ -17,3 +17,9 @@ Pylint:
 
     place this at the end of line
     # pylint:disable=missing-function-docstring
+
+
+Bootstrap
+
+    https://bootstrapious.com/
+    https://bootstrapious.com/tutorial/sidebar/index3.html#
