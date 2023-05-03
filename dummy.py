@@ -11,11 +11,7 @@ def addition(first_number: int, second_number: int):
     return first_number + second_number
 
 
-
 DEVICES = ["device_01", "device_02", "device_03"]
-# PCS = [{"id" : "01", "name" : "HP001"},
-#        {"id" : "02", "name" : "HP002"},
-#        {"id" : "03", "name" : "HP003"}]
 
 PCS = {"PC01" : "HP001",
        "PC02" : "HP002",
@@ -36,8 +32,5 @@ async def get_pc_by_id(pcid: str):
     """
     return PC by id
     """
-    # for PC in PCS:
-    #     if PC["id"].casefold() == pcid.casefold():
-    #         return PC
 
     return PCS[pcid]

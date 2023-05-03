@@ -1,0 +1,19 @@
+Start / Run webpage:
+
+    uvicorn app.main:app --reload
+
+    on specific port:
+    uvicorn app.main:app --reload --port 8080
+
+
+Pylint:
+
+    To ignore a specific Pylint validation, simply put
+    # pylint:disable=<pylint validation message>
+    at the end of the line
+
+    e.g.: To ignore
+    Pylint(C0116:missing-function-docstring)
+
+    place this at the end of line
+    # pylint:disable=missing-function-docstring
