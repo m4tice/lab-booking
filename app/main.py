@@ -5,6 +5,8 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from .library.helpers import openfile
+
 
 # =========================================================
 #### INITIALIZATION #######################################
@@ -31,9 +33,11 @@ async def home(request: Request):
     """
     Home page
     """
-    data = {
-        "page": "Home Page"
-    }
+    # data = {
+    #     "page": "Home Page"
+    # }
+
+    data = openfile("home.md")
 
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
@@ -44,9 +48,10 @@ async def page(request: Request, page_name: str):
     """
     Specific page
     """
-    data = {
-        "page": page_name
-    }
+    # data = {
+    #     "page": page_name
+    # }
+    data = openfile(page_name + ".md")
 
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
 
