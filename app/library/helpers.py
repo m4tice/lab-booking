@@ -4,6 +4,13 @@ import os
 import markdown
 
 
+def print_master(content: str):
+    """
+    Messasge / Notification from Master Application
+    """
+    print(f"MASTER:   {content}")
+
+
 def openfile(filename):
     """
     Open file

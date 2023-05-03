@@ -1,8 +1,15 @@
 """Unsplash"""
 
+import os
+
 from fastapi import Request, APIRouter
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+
+from ..library.helpers import print_master
+
+from dotenv import load_dotenv
+load_dotenv()
 
 
 # templates
@@ -20,4 +27,7 @@ async def unsplash_home(request: Request):
     """
     unplash home
     """
+    key = os.getenv("unsplash_key")
+    print_master(key)
+
     return templates.TemplateResponse("unsplash.html", {"request": request})
