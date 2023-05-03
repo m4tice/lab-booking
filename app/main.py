@@ -5,8 +5,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from app.routers import unsplash
-
+from app.routers import unsplash, twoforms, accordion
 from .library.helpers import openfile
 
 
@@ -19,6 +18,8 @@ app = FastAPI()
 
 # router
 app.include_router(unsplash.router)
+app.include_router(twoforms.router)
+app.include_router(accordion.router)
 
 # directories
 TEMPLATE_DIRECTORY = "./templates"
