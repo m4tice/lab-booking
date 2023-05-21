@@ -23,3 +23,8 @@ Bootstrap
 
     https://bootstrapious.com/
     https://bootstrapious.com/tutorial/sidebar/index3.html#
+
+
+References:
+
+    https://levelup.gitconnected.com/building-a-website-starter-with-fastapi-92d077092864#6052
